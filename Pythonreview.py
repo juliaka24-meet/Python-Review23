@@ -40,8 +40,9 @@ list_dicts_video = []
 for i in range(2):
     list_desc = []
     username = input("username: ")
+    title = input("title:")
     description = input("description: ")
-    dict_video = create_youtube_video(username, description)
+    dict_video = create_youtube_video(title, description)
     for liking in range(495):
         dict_video = like(dict_video)
     dict_video = dislike(dict_video)
